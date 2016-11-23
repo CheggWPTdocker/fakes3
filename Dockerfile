@@ -1,4 +1,5 @@
 FROM cheggwpt/ruby:0.0.2
+MAINTAINER jgilley@chegg.com
 
 # remove supervisor since it is not used here
 # Make the app directory
