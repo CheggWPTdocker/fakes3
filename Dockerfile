@@ -1,4 +1,4 @@
-FROM cheggwpt/ruby:0.0.1
+FROM cheggwpt/ruby:latest
 
 # Make the app directory
 # install the fake s3 gem without docs
