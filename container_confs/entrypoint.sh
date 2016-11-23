@@ -21,8 +21,8 @@ if [ "$1" == "fakes3" ]; then
 	echo /usr/bin/fakes3 -p 4569 -r /var/data/fakes3
 	/usr/bin/fakes3 -p 4569 -r /var/data/fakes3
 elif [ "$1" == "bash" ] || [ "$1" == "shell" ]; then
-	echo "starting /bin/bash...."
-	/bin/bash --rcfile /etc/bashrc
+	echo "starting /bin/bash with /etc/profile..."
+	/bin/bash --rcfile /etc/profile
 else
 	echo "Running something else"
 	exec "$@"
