@@ -1,8 +1,10 @@
-FROM cheggwpt/ruby:0.0.1
+FROM cheggwpt/ruby:0.0.2
 
+# remove supervisor since it is not used here
 # Make the app directory
 # install the fake s3 gem without docs
-RUN	mkdir -p /var/data/fakes3 && \
+RUN	apk del supervisor && \
+	mkdir -p /var/data/fakes3 && \
 	gem install fakes3 --no-ri --no-rdoc
 
 # Add the files
