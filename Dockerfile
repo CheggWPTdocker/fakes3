@@ -26,8 +26,6 @@ EXPOSE 4569
 # expose the app volume
 VOLUME ["/var/data/fakes3"]
 
-# the entry point definition
-ENTRYPOINT ["/entrypoint.sh"]
-
 # default command for entrypoint.sh
-CMD ["fakes3"]
+CMD ["/start_fakes3.sh"]
+
